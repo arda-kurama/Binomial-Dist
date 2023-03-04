@@ -69,7 +69,7 @@ for (var i = 0; i < n; i++) {
   }
 
   sampling.push(sample);
-  setTimeout(rowToColumn, 1000 - 10 * i, sampling[i]);
+  setTimeout(rowToColumn, n - i, sampling[i]);
 }
 
 console.log(sampling);
