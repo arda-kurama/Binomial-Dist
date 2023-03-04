@@ -11,7 +11,7 @@ var I = document.querySelector("#i");
 var J = document.querySelector("#j");
 var K = document.querySelector("#k");
 var sampling = [];
-var N = 2500;
+var N = 10000;
 var n = 10;
 var p = 2;
 

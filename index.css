@@ -40,20 +40,31 @@ body {
   color: rgb(128, 255, 212);
   font-size: 24px;
   width: 2rem;
-  height: 60vh;
+  height: 59vh;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .landing .hero .content .column #data {
   width: 2rem;
-  height: 0.75px;
+  height: 0.0056vh;
   margin: 0 auto;
   background-color: rgb(128, 255, 212);
   display: none;
 }
-.landing .hero .content .column .axis {
+.landing .hero .content .column .X {
   text-align: center;
   margin: 0.25rem 0 0;
   border: 1px solid rgb(128, 255, 212);
+}
+.landing .hero .content #Y {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  border: 1px solid rgb(128, 255, 212);
+  height: 55.5vh;
+  align-items: center;
+}
+.landing .hero .content #Y p {
+  text-align: center;
 }
 .landing .main {
   font-size: 72px;

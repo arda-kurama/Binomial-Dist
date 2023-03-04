@@ -61,21 +61,34 @@ body {
         color: $LightAqua;
         font-size: $Subtitle;
         width: 2rem;
-        height: 60vh;
+        height: 59vh;
         border: 1px solid $BlackFilm;
 
         #data {
           width: 2rem;
-          height: 0.75px;
+          height: 0.0056vh;
           margin: 0 auto;
           background-color: $LightAqua;
           display: none;
         }
 
-        .axis {
+        .X {
           text-align: center;
           margin: 0.25rem 0 0;
           border: 1px solid $LightAqua;
+        }
+      }
+
+      #Y {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        border: 1px solid $LightAqua;
+        height: 55.5vh;
+        align-items: center;
+
+        p {
+          text-align: center;
         }
       }
     }
