@@ -1,3 +1,12 @@
+var slider = document.getElementById("myRange");
+var output = document.getElementById("output");
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value;
+  N = this.value;
+};
+
 var data = document.querySelector("#data");
 var A = document.querySelector("#a");
 var B = document.querySelector("#b");
@@ -11,9 +20,10 @@ var I = document.querySelector("#i");
 var J = document.querySelector("#j");
 var K = document.querySelector("#k");
 var sampling = [];
-var N = 10000;
+var N = 1000;
 var n = 10;
 var p = 2;
+var repeat = false;
 
 function randomInt(max) {
   return Math.floor(Math.random() * max);
@@ -22,6 +32,9 @@ function randomInt(max) {
 function rowToColumn(success) {
   clone = data.cloneNode(true);
   clone.style.display = "block";
+  var height = 56 / N;
+  console.log(height);
+  clone.style.height = height + "vh";
 
   if (success == 0) {
     A.after(clone);
@@ -58,15 +71,17 @@ function rowToColumn(success) {
   }
 }
 
-for (var i = 0; i < N; i++) {
-  var sample = 0;
+function compute() {
+  for (var i = 0; i < N; i++) {
+    var sample = 0;
 
-  for (var j = 0; j < n; j++) {
-    if (randomInt(p) == 1) {
-      sample += 1;
+    for (var j = 0; j < n; j++) {
+      if (randomInt(p) == 1) {
+        sample += 1;
+      }
     }
-  }
 
-  sampling.push(sample);
-  setTimeout(rowToColumn, N - i, sampling[i]);
+    sampling.push(sample);
+    setTimeout(rowToColumn, N - i, sampling[i]);
+  }
 }

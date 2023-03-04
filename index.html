@@ -14,15 +14,15 @@
         <div class="title">boulac</div>
         <div class="content">
           <div class="column" id="Y">
-            <p>.1</p>
-            <p>.2</p>
-            <p>.3</p>
-            <p>.4</p>
-            <p>.5</p>
-            <p>.6</p>
-            <p>.7</p>
-            <p>.8</p>
-            <p>.9</p>
+            <p>.1 –</p>
+            <p>.2 –</p>
+            <p>.3 –</p>
+            <p>.4 –</p>
+            <p>.5 –</p>
+            <p>.6 –</p>
+            <p>.7 –</p>
+            <p>.8 –</p>
+            <p>.9 –</p>
           </div>
           <div class="column">
             <div class="X" id="a">0</div>
@@ -70,7 +70,20 @@
           </div>
         </div>
       </div>
-      <div class="main">slider</div>
+      <div class="main">
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="10000"
+            value="1000"
+            class="slider"
+            id="myRange"
+          />
+          <div id="output"></div>
+        </div>
+        <button onclick="compute();" class="button">stat</button>
+      </div>
     </div>
   </body>
 </html>
