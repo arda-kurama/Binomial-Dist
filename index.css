@@ -12,9 +12,10 @@ body {
 .landing {
   min-height: 100vh;
   display: flex;
+  align-items: center;
 }
 .landing .hero {
-  margin: auto;
+  margin: auto 20vw;
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
   padding: 1vw 2vw 2vw;
@@ -22,7 +23,6 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .landing .hero .title {
   font-size: 72px;
@@ -32,7 +32,6 @@ body {
 }
 .landing .hero .content {
   display: flex;
-  justify-content: space-evenly;
 }
 .landing .hero .content .column {
   display: flex;
@@ -40,20 +39,24 @@ body {
   justify-content: flex-start;
   color: rgb(128, 255, 212);
   font-size: 24px;
-  width: 3rem;
-  max-height: 60vh;
+  width: 2rem;
   height: 60vh;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 .landing .hero .content .column #data {
   width: 2rem;
-  height: 0.04rem;
+  height: 0.75px;
   margin: 0 auto;
   background-color: rgb(128, 255, 212);
   display: none;
 }
 .landing .hero .content .column .axis {
   text-align: center;
-  margin: 0.5rem 0 0;
+  margin: 0.25rem 0 0;
   border: 1px solid rgb(128, 255, 212);
+}
+.landing .main {
+  font-size: 72px;
+  font-weight: 700;
+  color: rgb(240, 248, 255);
 }/*# sourceMappingURL=index.css.map */

@@ -10,15 +10,14 @@ var H = document.querySelector("#h");
 var I = document.querySelector("#i");
 var J = document.querySelector("#j");
 var K = document.querySelector("#k");
-
-var n = 2500;
 var sampling = [];
+var N = 2500;
+var n = 10;
+var p = 2;
 
 function randomInt(max) {
   return Math.floor(Math.random() * max);
 }
-
-var column = document.querySelector("#max");
 
 function rowToColumn(success) {
   clone = data.cloneNode(true);
@@ -59,17 +58,15 @@ function rowToColumn(success) {
   }
 }
 
-for (var i = 0; i < n; i++) {
+for (var i = 0; i < N; i++) {
   var sample = 0;
 
-  for (var j = 0; j < 10; j++) {
-    if (randomInt(2) == 1) {
+  for (var j = 0; j < n; j++) {
+    if (randomInt(p) == 1) {
       sample += 1;
     }
   }
 
   sampling.push(sample);
-  setTimeout(rowToColumn, n - i, sampling[i]);
+  setTimeout(rowToColumn, N - i, sampling[i]);
 }
-
-console.log(sampling);

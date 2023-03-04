@@ -32,9 +32,10 @@ body {
 .landing {
   min-height: 100vh;
   display: flex;
+  align-items: center;
 
   .hero {
-    margin: auto;
+    margin: auto 20vw;
     background: $SlateGradient;
     border-radius: 2rem;
     padding: 1vw 2vw 2vw;
@@ -42,7 +43,6 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     .title {
       font-size: $Title;
@@ -53,7 +53,6 @@ body {
 
     .content {
       display: flex;
-      justify-content: space-evenly;
 
       .column {
         display: flex;
@@ -61,14 +60,13 @@ body {
         justify-content: flex-start;
         color: $LightAqua;
         font-size: $Subtitle;
-        width: 3rem;
-        max-height: 60vh;
+        width: 2rem;
         height: 60vh;
         border: 1px solid $BlackFilm;
 
         #data {
           width: 2rem;
-          height: 0.04rem;
+          height: 0.75px;
           margin: 0 auto;
           background-color: $LightAqua;
           display: none;
@@ -76,10 +74,16 @@ body {
 
         .axis {
           text-align: center;
-          margin: 0.5rem 0 0;
+          margin: 0.25rem 0 0;
           border: 1px solid $LightAqua;
         }
       }
     }
+  }
+
+  .main {
+    font-size: $Title;
+    font-weight: 700;
+    color: $Cream;
   }
 }
