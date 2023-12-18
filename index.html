@@ -71,7 +71,12 @@
         </div>
       </div>
       <div class="main">
+        <div class="description">
+          "Probability of recieving X amount of heads after flipping a coin 10
+          times."
+        </div>
         <div class="slidecontainer">
+          repititions:
           <input
             type="range"
             min="1"
@@ -82,7 +87,10 @@
           />
           <div id="output"></div>
         </div>
-        <button onclick="compute();" class="button">stat</button>
+        <div class="buttons">
+          <button onclick="compute();" class="button">calculate</button>
+          <button onclick="reset();" class="button">reset</button>
+        </div>
       </div>
     </div>
   </body>

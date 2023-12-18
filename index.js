@@ -1,5 +1,6 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("output");
+var data = document.getElementById("data");
 output.innerHTML = slider.value;
 
 slider.oninput = function () {
@@ -84,4 +85,8 @@ function compute() {
     sampling.push(sample);
     setTimeout(rowToColumn, N - i, sampling[i]);
   }
+}
+
+function reset() {
+  location.reload();
 }

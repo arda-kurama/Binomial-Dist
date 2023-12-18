@@ -101,14 +101,25 @@ body {
   .main {
     display: flex;
     flex-direction: column;
-    gap: 10vw;
+    gap: 5vw;
     align-items: center;
+    font-size: $Header;
+    font-weight: 700;
+    color: $Cream;
+    width: 35vw;
+    text-align: center;
+
+    .description {
+      color: $LightAqua;
+      text-shadow: 0.2rem 0.2rem 0.2rem $DarkAqua;
+    }
 
     .slidecontainer {
       width: 30vw;
     }
 
     .slider {
+      margin: 1vw 0;
       -webkit-appearance: none;
       appearance: none;
       width: 100%;
@@ -144,27 +155,49 @@ body {
       font-size: $Header;
       font-weight: 700;
       color: $Cream;
-      margin-top: 1vw;
     }
 
-    .button {
-      background: $SlateGradient;
-      border-radius: 2rem;
-      box-shadow: 0 0 25px $LightSlate;
-      text-align: center;
+    .buttons {
       display: flex;
-      flex-direction: column;
-      font-size: $Header;
-      font-weight: 700;
-      color: $LightAqua;
-      padding: 2vw 4vw;
-      border: none;
-    }
+      gap: 2vw;
 
-    .button:hover {
-      color: $Cream;
-      box-shadow: 0 0 25px $LightAqua;
-      cursor: pointer;
+      .button {
+        background: $SlateGradient;
+        border-radius: 2rem;
+        box-shadow: 0 0 25px $LightSlate;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-size: $Header;
+        font-weight: 700;
+        color: $LightAqua;
+        padding: 2vw 4vw;
+        border: none;
+        text-shadow: 0.15rem 0.15rem 0.15rem $DarkAqua;
+      }
+
+      .button:hover {
+        color: $Cream;
+        box-shadow: 0 0 25px $LightAqua;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .landing {
+    flex-direction: column;
+    gap: 4vw;
+    margin: 4vw auto;
+
+    .main {
+      width: auto;
+      margin: 0 10vw;
+
+      .slidecontainer {
+        width: 60vw;
+      }
     }
   }
 }

@@ -70,13 +70,23 @@ body {
 .landing .main {
   display: flex;
   flex-direction: column;
-  gap: 10vw;
+  gap: 5vw;
   align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(240, 248, 255);
+  width: 35vw;
+  text-align: center;
+}
+.landing .main .description {
+  color: rgb(128, 255, 212);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(95, 158, 160);
 }
 .landing .main .slidecontainer {
   width: 30vw;
 }
 .landing .main .slider {
+  margin: 1vw 0;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -108,9 +118,12 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: rgb(240, 248, 255);
-  margin-top: 1vw;
 }
-.landing .main .button {
+.landing .main .buttons {
+  display: flex;
+  gap: 2vw;
+}
+.landing .main .buttons .button {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
   box-shadow: 0 0 25px rgb(119, 136, 153);
@@ -122,9 +135,25 @@ body {
   color: rgb(128, 255, 212);
   padding: 2vw 4vw;
   border: none;
+  text-shadow: 0.15rem 0.15rem 0.15rem rgb(95, 158, 160);
 }
-.landing .main .button:hover {
+.landing .main .buttons .button:hover {
   color: rgb(240, 248, 255);
   box-shadow: 0 0 25px rgb(128, 255, 212);
   cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .landing {
+    flex-direction: column;
+    gap: 4vw;
+    margin: 4vw auto;
+  }
+  .landing .main {
+    width: auto;
+    margin: 0 10vw;
+  }
+  .landing .main .slidecontainer {
+    width: 60vw;
+  }
 }/*# sourceMappingURL=index.css.map */
