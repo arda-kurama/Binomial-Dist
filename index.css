@@ -153,6 +153,9 @@ body {
     width: auto;
     margin: 0 10vw;
   }
+  .landing .main .description {
+    display: none;
+  }
   .landing .main .slidecontainer {
     width: 60vw;
   }

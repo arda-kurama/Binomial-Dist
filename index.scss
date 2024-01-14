@@ -195,6 +195,10 @@ body {
       width: auto;
       margin: 0 10vw;
 
+      .description {
+        display: none;
+      }
+
       .slidecontainer {
         width: 60vw;
       }
